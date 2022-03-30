@@ -682,14 +682,11 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-t1y9AYscD3 {
-  z-index: 1000;
-  width: 100%;
-  position: relative;
-  min-height: 60px;
+.cid-t1y9AYscD3 .navbar-dropdown {
+  position: relative !important;
 }
-.cid-t1y9AYscD3 nav.navbar {
-  position: fixed;
+.cid-t1y9AYscD3 .navbar-dropdown {
+  position: absolute !important;
 }
 .cid-t1y9AYscD3 .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -794,8 +791,7 @@ a {
   min-height: 70px;
   transition: all 0.3s;
   border-bottom: 1px solid transparent;
-  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.6);
 }
 .cid-t1y9AYscD3 .navbar.opened {
   transition: all 0.3s;
@@ -1008,7 +1004,6 @@ a {
 }
 .cid-t1y9AYscD3 .navbar-dropdown {
   padding: 0 1rem;
-  position: fixed;
 }
 .cid-t1y9AYscD3 a.nav-link {
   display: flex;
@@ -1038,21 +1033,21 @@ a {
   }
 }
 .cid-t1y9GaNNvr {
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  background-color: #fafafa;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: #000000;
 }
 .cid-t1y9GaNNvr .carousel {
-  height: 800px;
-}
-.cid-t1y9GaNNvr .carousel img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
-.cid-t1y9GaNNvr .carousel-item,
 .cid-t1y9GaNNvr .carousel-inner {
-  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+}
+.cid-t1y9GaNNvr .carousel-item img {
+  height: 100vh;
+  object-fit: cover;
 }
 .cid-t1y9GaNNvr .carousel-caption {
   bottom: 40px;
@@ -1143,4 +1138,145 @@ a {
   .cid-t1y9GaNNvr .carousel-indicators {
     display: none !important;
   }
+}
+.cid-t1y9GaNNvr H5 {
+  color: #000000;
+}
+.cid-t1y9GaNNvr P {
+  color: #000000;
+}
+.cid-t1ybmmkkAX {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #4479d9;
+}
+.cid-t1ybmmkkAX .card-box {
+  z-index: 10;
+  position: relative;
+}
+@media (min-width: 1500px) {
+  .cid-t1ybmmkkAX .container {
+    max-width: 1400px;
+  }
+}
+.cid-t1ybmmkkAX .card {
+  margin: auto;
+}
+.cid-t1ybmmkkAX .mbr-iconfont {
+  display: block;
+  font-size: 5rem;
+  color: #6592e6;
+  margin-bottom: 2rem;
+}
+.cid-t1ybmmkkAX .card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cid-t1ybmmkkAX .row {
+  justify-content: center;
+}
+.cid-t1ybQdQldg {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-t1ybROorOf {
+  padding-top: 0rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-t1ybkLLxt6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #fafafa;
+}
+.cid-t1ybkLLxt6 .mbr-iconfont {
+  display: block;
+  font-size: 4rem;
+  color: #6592e6;
+  margin-bottom: 2rem;
+}
+.cid-t1ybkLLxt6 .card-wrapper {
+  min-height: 220px;
+  transition: all 0.3s;
+  border-radius: 4px;
+  padding: 1rem;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.cid-t1yb350fVy {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  background-color: #ffffff;
+}
+@media (min-width: 1500px) {
+  .cid-t1yb350fVy .container {
+    max-width: 1400px;
+  }
+}
+.cid-t1yb350fVy .mbr-iconfont {
+  display: block;
+  font-size: 5rem;
+  color: #6592e6;
+  margin-bottom: 2rem;
+}
+.cid-t1yb350fVy .card-wrapper {
+  margin-top: 3rem;
+}
+.cid-t1yb350fVy .row {
+  justify-content: center;
+}
+.cid-t1ybrfQvbe {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #232323;
+}
+.cid-t1ybrfQvbe .social-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-t1ybrfQvbe .soc-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+@media (max-width: 767px) {
+  .cid-t1ybrfQvbe .row {
+    text-align: center;
+  }
+  .cid-t1ybrfQvbe .social-row {
+    justify-content: center;
+  }
+}
+.cid-t1ybrfQvbe .list {
+  list-style: none;
+  padding-left: 0;
+  color: #bbbbbb;
+}
+@media (max-width: 991px) {
+  .cid-t1ybrfQvbe .list {
+    margin-bottom: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-t1ybrfQvbe .list {
+    margin-bottom: 0rem;
+  }
+}
+.cid-t1ybrfQvbe .mbr-text {
+  color: #bbbbbb;
+}
+.cid-t1ybrfQvbe .mbr-iconfont {
+  color: black;
 }
