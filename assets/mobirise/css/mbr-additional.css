@@ -18,7 +18,7 @@ body {
   font-size: 3.75rem;
 }
 .display-4 {
-  font-family: 'GmarketSansLight';
+  font-family: 'GmarketSansBold';
   font-size: 1.1rem;
   line-height: 1.5;
 }
@@ -586,7 +586,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'GmarketSansLight';
+  font-family: 'GmarketSansBold';
   font-size: 1.1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -600,7 +600,7 @@ a:hover {
   border-color: #e43f3f !important;
 }
 .form-control:-webkit-input-placeholder {
-  font-family: 'GmarketSansLight';
+  font-family: 'GmarketSansBold';
   font-size: 1.1rem;
   line-height: 1.5;
   font-weight: 400;
