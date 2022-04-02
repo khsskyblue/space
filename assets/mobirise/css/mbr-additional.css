@@ -18,7 +18,7 @@ body {
   font-size: 3.75rem;
 }
 .display-4 {
-  font-family: 'GmarketSansBold';
+  font-family: 'GmarketSansLight';
   font-size: 1.1rem;
   line-height: 1.5;
 }
@@ -586,7 +586,7 @@ a:hover {
   display: none;
 }
 .form-control {
-  font-family: 'GmarketSansBold';
+  font-family: 'GmarketSansLight';
   font-size: 1.1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -600,7 +600,7 @@ a:hover {
   border-color: #e43f3f !important;
 }
 .form-control:-webkit-input-placeholder {
-  font-family: 'GmarketSansBold';
+  font-family: 'GmarketSansLight';
   font-size: 1.1rem;
   line-height: 1.5;
   font-weight: 400;
@@ -682,11 +682,12 @@ body {
 a {
   transition: color 0.6s;
 }
-.cid-t1y9AYscD3 .navbar-dropdown {
-  position: relative !important;
+.cid-t1y9AYscD3 {
+  z-index: 1000;
+  width: 100%;
 }
-.cid-t1y9AYscD3 .navbar-dropdown {
-  position: absolute !important;
+.cid-t1y9AYscD3 nav.navbar {
+  position: fixed;
 }
 .cid-t1y9AYscD3 .dropdown-item:before {
   font-family: Moririse2 !important;
@@ -962,7 +963,7 @@ a {
   width: 30px;
   height: 2px;
   border-right: 5px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .cid-t1y9AYscD3 button.navbar-toggler .hamburger span:nth-child(1) {
   top: 0;
@@ -1004,6 +1005,7 @@ a {
 }
 .cid-t1y9AYscD3 .navbar-dropdown {
   padding: 0 1rem;
+  position: fixed;
 }
 .cid-t1y9AYscD3 a.nav-link {
   display: flex;
