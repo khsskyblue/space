@@ -23,11 +23,11 @@
         "display7Size": 1.2,
         "display4Font": "GmarketSansLight",
         "display4Size": 1.1,
-        "isRoundedButtons": false,
-        "isGhostButtonBorder": false,
-        "underlinedLinks": false,
-        "isAnimatedOnScroll": false,
-        "isScrollToTopButton": false
+        "isRoundedButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": true,
+        "isAnimatedOnScroll": true,
+        "isScrollToTopButton": true
       },
       "additionalSetColors": []
     },
@@ -65,18 +65,44 @@
       }
     ],
     "favicon": false,
-    "mbrsiteDomain": "ntunofjufj",
-    "imageResize": false,
-    "robotsSwitcher": false,
+    "mbrsiteDomain": "nyswqkkmth",
+    "imageResize": true,
+    "robotsSwitcher": true,
     "sitemapSwitcher": false,
-    "sitemapSwitcherAuto": false,
+    "sitemapSwitcherAuto": "on",
     "siteUrl": false,
-    "cookiesAlert": false,
     "gdpr": false,
     "publishChangesOnly": true,
     "uniqCompNum": 33,
     "versionPublish": "5.6.5",
-    "screenshot": "screenshot.png"
+    "screenshot": "screenshot.png",
+    "chatbutton": {
+      "phone": "+12345678901",
+      "message": "",
+      "size": "65px",
+      "backgroundColor": "#e5ddd5",
+      "position": "left",
+      "popupMessage": "Hi!👋\n\nType a message here. It will go straight to our phone! 🔥\n\nMobirise Team",
+      "showPopup": true,
+      "showOnIE": true,
+      "autoOpenTimeout": 5,
+      "headerColor": "#39847a",
+      "headerTitle": "👋 Chat with us on WhatsApp!",
+      "placeholder": "Type here",
+      "zIndex": 10,
+      "enabled": true
+    },
+    "cssOptimize": true,
+    "lazyLoad": true,
+    "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
+    "PWA": {
+      "enabled": true,
+      "name": "",
+      "icon": "@ADDONS_PATH@/pwa-builder/assets/icons/512x512.png",
+      "themeColor": "#e43f3f"
+    },
+    "cookiesAlert": false,
+    "pwa-switcher": true
   },
   "pages": {
     "index.html": {
@@ -1073,6 +1099,68 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "footers",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1.5rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            ".posi": {
+              "box-shadow": "0 0 2px #131419",
+              "background-color": "@bgmenufooter",
+              "padding": "(@height * 1%)",
+              "position": "fixed",
+              "right": "0",
+              "bottom": "0",
+              "margin-bottom": "0",
+              "left": "0",
+              "z-index": "15000",
+              "border-radius": "(@radius * 1px) (@radius * 1px) 0 0",
+              "height": "auto"
+            },
+            ".nav": {
+              "bottom": "0",
+              "z-index": "15000",
+              "width": "100%",
+              "padding": "(@height * 1%)",
+              "box-shadow": "0 0 2px #131419",
+              "background-color": "@bgmenufooter",
+              "display": "flex",
+              "border-radius": "(@radius * 1px) (@radius * 1px) 0 0",
+              "overflow-x": "auto"
+            },
+            ".nav__link": {
+              "display": "flex",
+              "flex-direction": "column",
+              "align-items": "center",
+              "justify-content": "center",
+              "flex-grow": "1",
+              "min-width": "50px",
+              "overflow": "hidden",
+              "white-space": "nowrap",
+              "font-family": "sans-serif",
+              "text-decoration": "none",
+              "-webkit-tap-highlight-color": "transparent",
+              "transition": "background-color 0.1s ease-in-out"
+            },
+            ".nav__link:hover": {
+              "color": "@bgmenuhoverfooter"
+            },
+            ".mbr-text": {
+              "color": "#ffffff"
+            },
+            ".nav__link--active": {
+              "color": "@activecolor !important"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section data-bs-version=\"5.1\" plugins=\"Dahomy\" group=\"Dahomy\">\n\n    \n<mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n   <header>©Dahomy</header>\n<input type=\"range\" inline title=\"Padding\" name=\"height\" min=\"1\" max=\"10\" step=\"1\" value=\"1\">\n<input type=\"color\" title=\"Background Footer\" value=\"#000000\" name=\"bgmenufooter\">\n<input type=\"color\" title=\"Hover Color\" value=\"#e43f3f\" name=\"bgmenuhoverfooter\">\n<input type=\"color\" title=\"Active Color\" value=\"#e43f3f\" name=\"activecolor\">\n<input type=\"range\" inline title=\"Item\" name=\"menu\" min=\"1\" max=\"6\" step=\"1\" value=\"5\"><input type=\"range\" inline title=\"Radius\" name=\"radius\" min=\"0\" max=\"40\" step=\"1\" value=\"14\">\n<input type=\"checkbox\" title=\"Show Icon\" name=\"Showicon\" checked>\n<input type=\"checkbox\" title=\"Show Menu\" name=\"ShowMenu\" checked>\n\n\n<select title=\"Active Menu\" name=\"activemenu\">\n            <option value=\"0\">none</option>\n            <option value=\"1\">1</option>\n            <option value=\"2\" selected>2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n        </select>\n\n\n   <select name=\"position\" title=\"Position\">\n<option value=\"nav\">Default</option>\n<option value=\"posi\" selected>Bottom(This position put the setting menu to top)</option>\n    </select>\n    \n <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"2\">\n</mbr-parameters>\n\n<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n</div>\n\n<nav class=\"media-container-row\" mbr-class=\"position\">\n   \n  <a href=\"#\" class=\"nav__link \" mbr-if=\"menu>0\" mbr-class=\"{'nav__link--active': activemenu == 1 }\">\n <span mbr-icon class=\"mbr-iconfont mobi-mbri-home mobi-mbri\" style=\"font-size: 30px;\" mbr-if=\"Showicon\"></span>\n <span mbr-text class=\"nav__text pt-2 mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav__link--active': activemenu == 1 }\" mbr-if=\"ShowMenu\">Home</span>\n \n  </a>\n  \n  <a href=\"#\" class=\"nav__link\" mbr-if=\"menu>1\" mbr-class=\"{'nav__link--active': activemenu == 2 }\">\n<span mbr-icon class=\"mbr-iconfont mobi-mbri-user-2 mobi-mbri\" style=\"font-size: 30px; \" mbr-if=\"Showicon\"></span>\n <span mbr-text class=\"nav__text pt-2 mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav__link--active': activemenu == 2 }\" mbr-if=\"ShowMenu\">Categorías</span>\n  </a>\n  \n  \n  \n  <a href=\"#\" class=\"nav__link\" mbr-if=\"menu>2\" mbr-class=\"{'nav__link--active': activemenu == 3 }\">\n <span mbr-icon class=\"mbr-iconfont mobi-mbri-gift mobi-mbri\" style=\"font-size: 30px; \" mbr-if=\"Showicon\"></span>\n <span mbr-text class=\"nav__text pt-2 mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav__link--active': activemenu == 3 }\" mbr-if=\"ShowMenu\">Añadir</span>\n  </a>\n  \n  \n  <a href=\"#\" class=\"nav__link\" mbr-if=\"menu>3\" mbr-class=\"{'nav__link--active': activemenu == 4 }\">\n  \n <span mbr-icon class=\"mbr-iconfont mobi-mbri-paper-plane mobi-mbri\" style=\"font-size: 30px; \" mbr-if=\"Showicon\"></span>\n <span mbr-text class=\"nav__text pt-2 mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav__link--active': activemenu == 4 }\" mbr-if=\"ShowMenu\">Ver más</span>\n  </a>\n\n <a href=\"#\" class=\"nav__link\" mbr-if=\"menu>4\" mbr-class=\"{'nav__link--active': activemenu == 5 }\">\n  \n <span mbr-icon class=\"mbr-iconfont mobi-mbri-map-pin mobi-mbri\" style=\"font-size: 30px; \" mbr-if=\"Showicon\"></span>\n <span mbr-text class=\"nav__text pt-2 mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav__link--active': activemenu == 5 }\" mbr-if=\"ShowMenu\">Ver más</span>\n  </a>  \n  \n\n  <a href=\"#\" class=\"nav__link\" mbr-if=\"menu>5\" mbr-class=\"{'nav__link--active': activemenu == 6 }\">\n  \n <span mbr-icon class=\"mbr-iconfont mbri-letter\" style=\"font-size: 30px;\" mbr-if=\"Showicon\"></span>\n <span mbr-text class=\"nav__text pt-2 mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\" mbr-class=\"{'nav__link--active': activemenu == 6 }\" mbr-if=\"ShowMenu\">Ver más</span>\n  </a> \n</nav>\n\n</section>",
+          "_cid": "krdIGPNn6L",
+          "_anchor": "design-block-krdIGPNn6L",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         }
       ]
