@@ -65,7 +65,7 @@
       }
     ],
     "favicon": false,
-    "mbrsiteDomain": "nyswqkkmth",
+    "mbrsiteDomain": "quoncte62m",
     "imageResize": true,
     "robotsSwitcher": true,
     "sitemapSwitcher": false,
@@ -76,22 +76,6 @@
     "uniqCompNum": 33,
     "versionPublish": "5.6.5",
     "screenshot": "screenshot.png",
-    "chatbutton": {
-      "phone": "+12345678901",
-      "message": "",
-      "size": "65px",
-      "backgroundColor": "#e5ddd5",
-      "position": "left",
-      "popupMessage": "Hi!👋\n\nType a message here. It will go straight to our phone! 🔥\n\nMobirise Team",
-      "showPopup": true,
-      "showOnIE": true,
-      "autoOpenTimeout": 5,
-      "headerColor": "#39847a",
-      "headerTitle": "👋 Chat with us on WhatsApp!",
-      "placeholder": "Type here",
-      "zIndex": 10,
-      "enabled": true
-    },
     "cssOptimize": true,
     "lazyLoad": true,
     "robotsText": "User-agent: *\r\nDisallow: /cgi-bin\r\n",
@@ -102,7 +86,8 @@
       "themeColor": "#e43f3f"
     },
     "cookiesAlert": false,
-    "pwa-switcher": true
+    "pwa-switcher": true,
+    "chatbutton": false
   },
   "pages": {
     "index.html": {
